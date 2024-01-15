@@ -33,16 +33,17 @@
         <a href="/media/flower.webm">WEBM</a>
     </video>
 
-    <p>input 연습</p>
+    <br>
+    <b>input 연습</b>
     <form action="" id="id">
         <label for="id">아이디</label>
         <input type="text" id="id" value="아이디를 입력하세요">
         <label for="password">비밀번호</label>
         <input type="password" id="password" value="">
-        <input type="submit" value="제출하기">
+        <input type="submit" value="제출하기" onclick="alert('제출되었습니다!')">
     </form>
 
-    <ul>텍스트 관련 태그들</ul>
+    <ul>텍스트 관련 태그들
         <li><b>b tag</li>
         <li><strong>strong tag</strong></li>
         <li><i>i tag</i></li>
@@ -53,5 +54,31 @@
         <li><ins>ins tag</ins></li>
         <li><sub>sub tag</sub></li>
         <li><sup>sup tag</sup></li>
+    </ul>
+    <h3> blockquote</h3>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <button onclick="getLocation()">위치 가져오기</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "경도: " + position.coords.latitude +
+          "<br>위도: " + position.coords.longitude;
+        }
+    </script>
 </body>
 </html>
