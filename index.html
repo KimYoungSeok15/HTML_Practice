@@ -93,16 +93,60 @@
         <li><sup>sup tag</sup></li>
     </ul>
     <h1> blockquote</h1>
+
+    <hr>
+
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
     </blockquote>
+
+    <hr>
 
     <h1>JS로 현재 경도/위도 가져오기</h1>
     <button onclick="getLocation()">위치 가져오기</button>
 
     <p id="demo"></p>
 
+    <hr>
+
+    <h1>테이블</h1>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr style="background-color: #96D4D4;">
+            <th style="border: 1px solid black;">
+                항목1
+            </th>
+            <th style="border: 1px solid black;">
+                항목2
+            </th>
+            <th style="border: 1px solid black;">
+                항목3
+            </th>
+        </tr>
+        <tr style="height:100px; background-color: #e7ffa5;">
+            <td style="border: 1px solid black;">
+                내용1
+            </td>
+            <td style="border: 1px solid black;">
+                내용2
+            </td>
+            <td style="border: 1px solid black;">
+                내용3
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>날짜 가져오기</h1>
+    <button type="button" onclick="document.getElementById('demo2').innerHTML= Date()">클릭</button>
+    <p id="demo2"></p>
+
+
+    <hr>
+    <h1>이모지</h1>
+    <h1>&#128507;&#128508;&#128509;&#128512;&#128514;</h1>
     <script>
+    
         const x = document.getElementById("demo");
         
         function getLocation() {
@@ -117,6 +161,7 @@
           x.innerHTML = "경도: " + position.coords.latitude +
           "<br>위도: " + position.coords.longitude;
         }
+
     </script>
 </body>
 </html>
