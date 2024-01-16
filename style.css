@@ -1,0 +1,140 @@
+header {
+    margin: 0px 100px;
+}
+
+.navigation {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+    color: #594F43;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin-left: 100px;
+}
+
+.navigation a{
+    color: #594F43;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration: none;
+}
+
+.section-wrapper{
+    display: flex;
+    justify-content: start;
+    height: 80vh;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.left-section {
+    width: 50%;
+    display: inline-flex block;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.section-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.section-hi-box {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E5EDFF;
+}
+
+.section-hi {
+    color: #403930;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+
+}
+
+.intro {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 80px */
+    letter-spacing: -1.92px;
+}
+
+.link-box{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.link-box1 {
+    box-sizing: border-box;
+    display: flex;
+    width: 270px;
+    padding: 24px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #204FB2;
+    border: 4px white;
+}
+
+.link-content1{
+    color: #F3F2FF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 36px */
+}
+
+.link-box2 {
+    box-sizing: border-box;
+    display: flex;
+    width: 270px;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 4px solid #4D5566;
+}
+
+.link-content2{
+    color: #4D5566;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 36px */
+}
+
+.right-section {
+    text-align: center;
+    width: 40%;
+}
+
+.profile-image {
+    width: 80%; /* 이미지의 너비 조절 */
+    border-radius: 50%; /* 둥근 테두리를 원 모양으로 설정 */
+    object-fit: cover;
+}

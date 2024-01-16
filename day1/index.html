@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    <!-- favicon 변경 -->
+    <link rel="icon" type="image/x-icon" href="/media/dog.png">
+</head>
+<body>
+    <h1>h1~h6까지 비교</h1>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <hr>
+    <p>p태그</p>
+
+    <hr>
+    <h1>색상 바꾸기</h1>
+    <p style="font-size: x-large;">검정</p>
+    <p style="font-size: x-large; color: blue;">파랑</p>
+    <p style="font-size: x-large; color: red;">빨강</p>
+    <h1>배경 바꾸기(스타일)</h1>
+    <span style="background-color: aqua;">인라인 요소1</span>
+    <span style="background-color: rgb(208, 197, 255);">인라인 요소2</span>
+    
+    <hr>
+
+    <h1>br vs hr</h1>
+    <p>아래는 br 10개</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>아래는 hr 10개</p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <h1>이미지</h1>
+    <img src="https://www.ibric.org/upload/geditor/202308/0.75130100_1690953533.png" alt="">
+
+    <hr>
+
+    <h1>비디오</h1>
+    <video controls width="250">
+        <source src="/media/flower.webm" type="video/webm" />
+      
+        Download the video
+        <a href="/media/flower.webm">WEBM</a>
+    </video>
+
+    <hr>
+    <br>
+    <h1>input 연습</h1>
+    <form action="" id="id">
+        <label for="id">아이디</label>
+        <input type="text" id="id" value="" placeholder="아이디를 입력하세요">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" value="" placeholder="비밀번호를 입력하세요">
+        <input type="submit" value="제출하기" onclick="alert('제출되었습니다!')">
+    </form>
+
+    <hr>
+    <h1>리스트</h1>
+    <ul>텍스트 관련 태그들
+        <li><b>b tag</li>
+        <li><strong>strong tag</strong></li>
+        <li><i>i tag</i></li>
+        <li><em>em tag</em></li>
+        <li><mark>mark tag</mark></li>
+        <li><small>small tag</small></li>
+        <li><del>del tag</del></li>
+        <li><ins>ins tag</ins></li>
+        <li><sub>sub tag</sub></li>
+        <li><sup>sup tag</sup></li>
+    </ul>
+    <h1> blockquote</h1>
+
+    <hr>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <hr>
+
+    <h1>JS로 현재 경도/위도 가져오기</h1>
+    <button onclick="getLocation()">위치 가져오기</button>
+
+    <p id="demo"></p>
+
+    <hr>
+
+    <h1>테이블</h1>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr style="background-color: #96D4D4;">
+            <th style="border: 1px solid black;">
+                항목1
+            </th>
+            <th style="border: 1px solid black;">
+                항목2
+            </th>
+            <th style="border: 1px solid black;">
+                항목3
+            </th>
+        </tr>
+        <tr style="height:100px; background-color: #e7ffa5;">
+            <td style="border: 1px solid black;">
+                내용1
+            </td>
+            <td style="border: 1px solid black;">
+                내용2
+            </td>
+            <td style="border: 1px solid black;">
+                내용3
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>날짜 가져오기</h1>
+    <button type="button" onclick="document.getElementById('demo2').innerHTML= Date()">클릭</button>
+    <p id="demo2"></p>
+
+
+    <hr>
+    <h1>이모지</h1>
+    <h1>&#128507;&#128508;&#128509;&#128512;&#128514;</h1>
+    <script>
+    
+        const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "경도: " + position.coords.latitude +
+          "<br>위도: " + position.coords.longitude;
+        }
+
+    </script>
+</body>
+</html>
