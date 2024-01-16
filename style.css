@@ -2,6 +2,25 @@ body {
     margin: 0px;
 }
 
+.ripple-container {
+    position: relative;
+}
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.2s linear;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+}
+
 header {
     margin: 0px 100px;
     height: 92vh;
@@ -21,6 +40,7 @@ header {
     padding-right: 100px;
     width: 100%;
     box-sizing: border-box; /* 내용물의 크기에 padding과 border를 포함시키도록 설정 */
+    z-index: 10;
 }
 
 .navigation a{
@@ -63,6 +83,15 @@ header {
     gap: 10px;
     border-radius: 10px;
     background: #E5EDFF;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-2deg); }
+    50% { transform: translateX(5px) rotate(2deg); }
+    75% { transform: translateX(-5px) rotate(-2deg); }
+    100% { transform: translateX(0); }
 }
 
 .section-hi {
@@ -72,7 +101,6 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 36px */
-
 }
 
 .intro {
@@ -206,4 +234,28 @@ header {
     font-weight: 500;
     line-height: 150%; /* 30px */
     letter-spacing: -0.2px;
+}
+
+.contact{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
+    color: rgba(64, 57, 48, 0.80);
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
