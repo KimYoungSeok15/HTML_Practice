@@ -1,0 +1,137 @@
+.navigation {
+    gap: 12px;
+    color: #594F43;
+    height: 34px;
+    top: 0px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    box-sizing: border-box; /* 내용물의 크기에 padding과 border를 포함시키도록 설정 */
+    z-index: 10;
+}
+
+.navigation a{
+    color: #594F43;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration: none;
+}
+
+header {
+    margin: 0px 20px;
+    height: 100vh;
+}
+
+.section-hi {
+    color: #403930;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+.section-box {
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.left-section {
+    width: auto;
+}
+
+.intro {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 80px */
+    letter-spacing: -1.28px;
+}
+
+.profile-image {
+    display: none; /* hidden은 보이지만 않고 자리는 차지. none은 방도 뺀다. */
+}
+.right-section {
+    text-align: end;
+    width: 0%;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+}
+
+.link-box1 {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #204FB2;
+    border: 2px white;
+    text-decoration: none;
+}
+
+.link-content1{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 36px */
+}
+
+.link-box2 {
+    box-sizing: border-box;
+    display: flex;
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #4D5566;
+}
+
+.link-content2{
+    color: #4D5566;
+    font-family: Work Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 36px */
+}
+
+.introduce {
+    display: flex;
+    box-sizing: border-box;
+    min-height: 50vh;
+    height: auto;
+    padding: 30px 20px;
+    gap: 10px;
+}
+
+.contact {
+    display: none;
+}
+
+.introduce-title{
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+}
+
+.flying{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 60px;
+    left: 40px;
+}
+
+.introduce-content{
+    font-size: 16px;
+}

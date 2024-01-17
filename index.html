@@ -1,10 +1,27 @@
 <!DOCTYaE html>
 <html lang="ko">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4H55JHH0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C4H55JHH0F');
+    </script>
     <meta charset="UTF-8">
-    <meta name="viewaort" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- 가로길이: Galaxy S8+ : 360px, iPad Air : 820px -->
+  <!-- 기본 CSS 파일 -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 작은 화면에 대한 CSS 파일 -->
+  <link rel="stylesheet" href="small-screen.css" media="screen and (max-width: 600px)"> 
+
+  <!-- 중간 크기 화면에 대한 CSS 파일 -->
+  <link rel="stylesheet" href="medium-screen.css" media="screen and (min-width: 601px) and (max-width: 900px)">
 </head>
 <body class="ripple-container" onClick="createRipple(event)">
     <div class="ripple">
@@ -26,7 +43,7 @@
                         </div>
                     </div>
                     <div class="intro">
-                        신입 백엔드 개발자.
+                        신입 백엔드 개발자
                         <div class="problem-solver">Problem Solver</div>
                         김영석입니다.
                     </div>
@@ -77,6 +94,12 @@
     </section>
     <div class="contact">
         Contact Me
+        <div type="github" onclick="onClickButton(type)">
+            깃허브
+        </div>
+        <div type="resume" onclick="onClickButton(type)">
+            이력서
+        </div>
     </div>
 </body>
 <script>
@@ -97,6 +120,22 @@
       ripple.style.animation = 'none';
       void ripple.offsetWidth; // Trigger reflow
       ripple.style.animation = 'ripple-animation 0.6s linear';
+    }
+
+    function onClickButton(type){
+        if(type === 'github'){
+            // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
+            gtag("event", "깃허브_버튼_클릭", {
+                'event_category': '깃허브_버튼_클릭',
+                'event_label': '깃허브_버튼_클릭'
+            })
+        }
+        else if(type === 'resume'){
+            gtag("event", "이력서_버튼_클릭", {
+                'event_category': '이력서_버튼_클릭',
+                'event_label': '이력서_버튼_클릭'
+            })
+        }
     }
   </script>
 </html>
