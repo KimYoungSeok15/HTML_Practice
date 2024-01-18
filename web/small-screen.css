@@ -161,3 +161,116 @@ header {
     gap: 12px; /* 그리드 아이템 사이의 간격 */
     padding: 12px; /* 그리드 컨테이너 주위의 패딩 */
 }
+
+.projects{
+    padding: 20px;
+}
+
+.project{
+    height:auto;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.pjt-left-section{
+    width:100%;
+}
+
+.pjt-img-tower1{
+    margin-top: -20px;
+}
+
+.pjt-img-tower2{
+    margin-top: 10px;
+}
+
+.pjt-img-tower3{
+    margin-top: 0px;
+}
+
+.evaluation{
+    gap: 20px;
+}
+
+.evaluation-container{
+    padding: 20px 0;
+}
+
+.eval-title{
+    font-size: 24px;
+}
+
+.swiper-wrraper{
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.swiper{
+    max-width: 360px;
+    margin: 0, auto;
+}
+
+.swiper-slide{
+    max-width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-title1{
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.swiper-title2{
+    font-size: 14px;
+}
+
+
+.aspiration-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.aspiration{
+    min-width: 60%;
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 60px */
+    letter-spacing: -0.96px;
+    margin: 0;
+}
+
+.footer{
+    padding: 50px 0;
+    width: 100%;
+    background: #FAFAFA;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    margin: 0 auto;
+}
+
+.footer-icons img:hover{
+    cursor: pointer;   
+}
+
+.footer-copyright{
+    margin-top: 40px;
+    color: var(--Dark, #21243D);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
