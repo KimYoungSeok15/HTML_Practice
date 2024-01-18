@@ -1,4 +1,4 @@
-<!DOCTYaE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <!-- Google tag (gtag.js) -->
@@ -14,14 +14,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- 가로길이: Galaxy S8+ : 360px, iPad Air : 820px -->
-  <!-- 기본 CSS 파일 -->
-  <link rel="stylesheet" href="style.css">
+    <!-- 기본 CSS 파일 -->
+    <link rel="stylesheet" href="style.css">
 
-  <!-- 작은 화면에 대한 CSS 파일 -->
-  <link rel="stylesheet" href="small-screen.css" media="screen and (max-width: 600px)"> 
+    <!-- 작은 화면에 대한 CSS 파일 -->
+    <link rel="stylesheet" href="small-screen.css" media="screen and (max-width: 600px)"> 
 
-  <!-- 중간 크기 화면에 대한 CSS 파일 -->
-  <link rel="stylesheet" href="medium-screen.css" media="screen and (min-width: 601px) and (max-width: 900px)">
+    <!-- 중간 크기 화면에 대한 CSS 파일 -->
+    <link rel="stylesheet" href="medium-screen.css" media="screen and (min-width: 601px) and (max-width: 900px)">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="ripple-container" onClick="createRipple(event)">
     <div class="ripple">
@@ -92,50 +99,280 @@
             </div>
         </div>
     </section>
-    <div class="contact">
+    <section class="tech-section">
+        <div class="tech-title-container">
+            <div class="tech-title1">
+                기술 스택
+            </div>
+            <div class="tech-title2">
+                지금까지 활용해 본 기술들입니다. <br/>
+                넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다.
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"><img src="./media/tech1.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="./media/tech2.png" alt="Image 2"></div>
+            <div class="grid-item"><img src="./media/tech3.png" alt="Image 3"></div>
+            <div class="grid-item"><img src="./media/tech4.png" alt="Image 4"></div>
+            <div class="grid-item"><img src="./media/tech5.png" alt="Image 5"></div>
+            <div class="grid-item"><img src="./media/tech6.png" alt="Image 6"></div>
+            <div class="grid-item"><img src="./media/tech7.png" alt="Image 6"></div>
+            <div class="grid-item"><img src="./media/tech8.png" alt="Image 6"></div>
+            <div class="grid-item"><img src="./media/tech9.png" alt="Image 6"></div>
+            <div class="grid-item"><img src="./media/tech10.png" alt="Image 6"></div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="project-title">내 프로젝트</div>
+        <figure class="project">
+            <section class="pjt-left-section">
+                <title-container class="pjt-title-container">
+                    <div class="pjt-title1">
+                        Sheepify States
+                    </div class="pjt-title2">
+                        React, Typescript, MobX
+                        <br/> <br/>
+                        인기 있는 Sheepify 앱을 위해 귀여운 <br>
+                        스타일로 빈 상태 화면을 디자인했습니다.
+                    </div>
+                </title-container>
+                <div class="pjt-link-container">
+                    <a href="">
+                        노션링크
+                    </a>
+                    <a href="">
+                        깃허브링크
+                    </a>
+                </div>
+            </section>
+            <section class="pjt-img-container">
+                <img src="./media/Rectangle1.png" alt="">
+                <img src="./media/Rectangle2.png" alt="">
+                <img src="./media/Rectangle3.png" alt="">
+            </section>
+        </figure>
+        <figure class="project">
+            <section class="pjt-left-section">
+                <title-container class="pjt-title-container">
+                    <div class="pjt-title1">
+                        Sheepify States
+                    </div class="pjt-title2">
+                        React, Typescript, MobX
+                        <br/> <br/>
+                        인기 있는 Sheepify 앱을 위해 귀여운 <br>
+                        스타일로 빈 상태 화면을 디자인했습니다.
+                    </div>
+                </title-container>
+                <div class="pjt-link-container">
+                    <a href="">
+                        노션링크
+                    </a>
+                    <a href="">
+                        깃허브링크
+                    </a>
+                </div>
+            </section>
+            <section class="pjt-img-container">
+                <span class="pjt-img-tower1">
+                    <img class="pj1" src="./media/Rectangle1.png" alt="" style="padding-top: 20px;">
+                    <img src="./media/Rectangle4.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                </span>
+                <span class="pjt-img-tower2">
+                    <img src="./media/Rectangle5.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                    <img src="./media/Rectangle2.png" alt="">
+                </span>
+                <span class="pjt-img-tower3">
+                    <img src="./media/Rectangle3.png" alt="">
+                    <img src="./media/Rectangle6.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                </span>
+            </section>
+        </figure>
+        <figure class="project">
+            <section class="pjt-left-section">
+                <title-container class="pjt-title-container">
+                    <div class="pjt-title1">
+                        Sheepify States
+                    </div class="pjt-title2">
+                        React, Typescript, MobX
+                        <br/> <br/>
+                        인기 있는 Sheepify 앱을 위해 귀여운 <br>
+                        스타일로 빈 상태 화면을 디자인했습니다.
+                    </div>
+                </title-container>
+                <div class="pjt-link-container">
+                    <a href="">
+                        노션링크
+                    </a>
+                    <a href="">
+                        깃허브링크
+                    </a>
+                </div>
+            </section>
+            <section class="pjt-img-container">
+                <span class="pjt-img-tower1">
+                    <img class="pj1" src="./media/Rectangle1.png" alt="" style="padding-top: 20px;">
+                    <img src="./media/Rectangle4.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                </span>
+                <span class="pjt-img-tower2">
+                    <img src="./media/Rectangle5.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                    <img src="./media/Rectangle2.png" alt="">
+                </span>
+                <span class="pjt-img-tower3">
+                    <img src="./media/Rectangle3.png" alt="">
+                    <img src="./media/Rectangle6.png" alt="" style="width: 158px; padding-left:9px; padding-bottom:20px;">
+                </span>
+            </section>
+        </figure>
+    </section>
+    <section class="evaluation-container">
+        <figure class="evaluation">
+            <div class="eval-title">
+                함께 개발한 동료들의 평가
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-title1">
+                            "OOO은 개발 역량 뿐 아니라 함께 일하기 너후 좋은 동료였습니다. 
+                            항상 문제 해결에 적극적이고, 다른 팀원들의 문제에도 발벗고 도움을 주었습니다. 
+                            OO과 함께하는 프로젝트는 항상 성과가 좋았습니다. 
+                        </div>
+                        <div class="swiper-title2">
+                            OO프로젝트 팀원, 민재
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-title1">
+                            "OOO은 개발 역량 뿐 아니라 함께 일하기 너후 좋은 동료였습니다. 
+                            항상 문제 해결에 적극적이고, 다른 팀원들의 문제에도 발벗고 도움을 주었습니다. 
+                            OO과 함께하는 프로젝트는 항상 성과가 좋았습니다. 
+                        </div>
+                        <div class="swiper-title2">
+                            OO프로젝트 팀원, 민재
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-title1">
+                            긍정적인 에너지가 너무 좋은 동료였습니다. 
+                            다른 친구들보다 더 멀리, 많은 것을 볼 수 있는 역량을 지닌 뛰어난 친구입니다. 
+                            그와 함께 일하는 것을 추천합니다!
+                        </div>
+                        <div class="swiper-title2">
+                            ABC 프로젝트 팀원, 민수
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-title1">
+                            긍정적인 에너지가 너무 좋은 동료였습니다. 
+                            다른 친구들보다 더 멀리, 많은 것을 볼 수 있는 역량을 지닌 뛰어난 친구입니다. 
+                            그와 함께 일하는 것을 추천합니다!
+                        </div>
+                        <div class="swiper-title2">
+                            ABC 프로젝트 팀원, 민수
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-title1">
+                            긍정적인 에너지가 너무 좋은 동료였습니다. 
+                            다른 친구들보다 더 멀리, 많은 것을 볼 수 있는 역량을 지닌 뛰어난 친구입니다. 
+                            그와 함께 일하는 것을 추천합니다!
+                        </div>
+                        <div class="swiper-title2">
+                            ABC 프로젝트 팀원, 민수
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+        </figure>
+    </section>
+        <section class="aspiration-container">
+            <figure class="aspiration">
+                꼼꼼함과 기술에 대한 집요함으로 어떤 문제든 <br/>
+                해결해내는 백엔드 개발자가 되겠습니다.  <br/>
+                감사합니다! 😊
+            </figure>
+        </section>
+    <footer class="footer">
+        <div class="footer-icons">
+            <img src="./media/fb.png" alt="">
+            <img src="./media/insta.png" alt="">
+            <img src="./media/linkedin.png" alt="">
+        </div>
+        <div class="footer-copyright">
+            Copyright ©2024 All rights reserved 
+        </div>
+    </footer>
+    <a href="" class="contact">
         Contact Me
-        <div type="github" onclick="onClickButton(type)">
+        <!-- <div type="github" onclick="onClickButton(type)">
             깃허브
         </div>
         <div type="resume" onclick="onClickButton(type)">
             이력서
-        </div>
-    </div>
+        </div> -->
+    </a>
+    <script>
+        function createRipple(event) {
+          const ripple = document.querySelector('.ripple');
+          const rippleContainer = document.querySelector('.ripple-container');
+    
+          // Calculate the position of the ripple relative to the container
+          const rect = rippleContainer.getBoundingClientRect();
+          const mouseX = event.clientX - rect.left;
+          const mouseY = event.clientY - rect.top;
+    
+          // Set the position of the ripple
+          ripple.style.left = `${mouseX-253}px`;
+          ripple.style.top = `${mouseY-270}px`;
+    
+          // Restart the animation
+          ripple.style.animation = 'none';
+          void ripple.offsetWidth; // Trigger reflow
+          ripple.style.animation = 'ripple-animation 0.6s linear';
+        }
+    
+        function onClickButton(type){
+            if(type === 'github'){
+                // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
+                gtag("event", "깃허브_버튼_클릭", {
+                    'event_category': '깃허브_버튼_클릭',
+                    'event_label': '깃허브_버튼_클릭'
+                })
+            }
+            else if(type === 'resume'){
+                gtag("event", "이력서_버튼_클릭", {
+                    'event_category': '이력서_버튼_클릭',
+                    'event_label': '이력서_버튼_클릭'
+                })
+            }
+        }
+    
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+    </script>
 </body>
-<script>
-    function createRipple(event) {
-      const ripple = document.querySelector('.ripple');
-      const rippleContainer = document.querySelector('.ripple-container');
-
-      // Calculate the position of the ripple relative to the container
-      const rect = rippleContainer.getBoundingClientRect();
-      const mouseX = event.clientX - rect.left;
-      const mouseY = event.clientY - rect.top;
-
-      // Set the position of the ripple
-      ripple.style.left = `${mouseX-253}px`;
-      ripple.style.top = `${mouseY-270}px`;
-
-      // Restart the animation
-      ripple.style.animation = 'none';
-      void ripple.offsetWidth; // Trigger reflow
-      ripple.style.animation = 'ripple-animation 0.6s linear';
-    }
-
-    function onClickButton(type){
-        if(type === 'github'){
-            // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
-            gtag("event", "깃허브_버튼_클릭", {
-                'event_category': '깃허브_버튼_클릭',
-                'event_label': '깃허브_버튼_클릭'
-            })
-        }
-        else if(type === 'resume'){
-            gtag("event", "이력서_버튼_클릭", {
-                'event_category': '이력서_버튼_클릭',
-                'event_label': '이력서_버튼_클릭'
-            })
-        }
-    }
-  </script>
 </html>
